@@ -59,7 +59,7 @@ public class Chart_Fragment extends Fragment {
         result = (TextView) v.findViewById(R.id.tvResult);
         result1 = (TextView) v.findViewById(R.id.tvResult1);
         final ImageView image = v.findViewById(R.id.imageView);
-        btnBarChart = v.findViewById(R.id.btnBarChart);
+
 
 
         databaseReference.addValueEventListener(new ValueEventListener() {
