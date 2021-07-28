@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCD0FF"
+    tools:context=".SignUp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="40dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+            <ImageView
+                android:id="@+id/dl_image"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="top|fill_horizontal"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_wave"
+                android:scaleType="fitCenter" />
+
+
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="SIGN UP"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="27dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/username"
+                android:layout_height="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="Username" />
+
+
+            <EditText
+                android:id="@+id/Password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="150dp"
+                android:hint="Password" />
+
+
+
+            <EditText
+                android:id="@+id/ConfPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="200dp"
+                android:hint="Confirm Password" />
+
+
+
+            <Button
+                android:id="@+id/signUp"
+                android:text="Sign up"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="116dp"
+                android:background="@drawable/round_btn"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</android.widget.RelativeLayout>

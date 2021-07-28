@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#DCD0FF"
+    tools:context=".LoginActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="40dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+
+
+            <ImageView android:id="@+id/dl_image"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="top|fill_horizontal"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_wave"
+                android:scaleType="fitCenter"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="27dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/usernameLog"
+                android:layout_height="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="Username" />
+
+
+            <EditText
+                android:id="@+id/PasswordLog"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="200dp"
+                android:hint="Password" />
+
+
+
+            <Button
+                android:id="@+id/login"
+                android:text="Login"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="116dp"
+                android:background="@drawable/round_btn"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="If you are not registered ?"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:layout_marginTop="470dp"
+    android:layout_marginLeft="50dp"
+    />
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Sign up"
+        android:textStyle="bold"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="#7D0552"
+        android:background="@android:color/transparent"
+
+        />
+
+</android.widget.RelativeLayout>

@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout1"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
-    <TextView
-        android:id="@+id/k"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Real Time Monitor"
-        android:layout_marginTop="5dp"
-        android:textSize="27dp" />
-    <TextView
-        android:id="@+id/a"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Current Action"
-        android:layout_marginLeft="15dp"
-        android:textSize="22dp" />
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Retrive Data"
-        android:layout_alignBaseline="@+id/a"
-        android:layout_alignRight="@+id/a"
-        android:textSize="22dp" />
 
-    <TextView
-        android:id="@+id/b"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Last Updated"
-        android:layout_below="@+id/a"
-        android:layout_marginLeft="15dp"
-        android:textSize="22dp" />
-    <TextView
-        android:id="@+id/tvResult1"
-        android:layout_marginTop="30dp"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/tvResult"
-        android:text="Retrive Data"
-        android:layout_alignBaseline="@+id/b"
-        android:layout_alignRight="@+id/b"
-        android:textSize="22dp" />
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/tvResult1"
-        android:layout_marginTop="50dp"/>
-    <Button
-        android:id="@+id/btnBarChart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Bar Chart "
-        android:layout_below="@+id/imageView"/>
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/toolBar"
+           app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+           android:layout_width="match_parent"
+           app:titleTextColor="#FFFFFF"
+           android:background="#736AFF"
+           android:layout_height="30dp"/>
+
+       <com.google.android.material.tabs.TabLayout
+           android:layout_width="match_parent"
+           android:id="@+id/tabLayout"
+           app:tabGravity="fill"
+           app:tabTextColor="@color/cardview_light_background"
+           app:tabIndicatorHeight="3dp"
+           app:tabMode="fixed"
+           app:tabIndicatorColor="#ffffff"
+           android:background="#736AFF"
+           android:layout_height="wrap_content"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/appBarLayout"
+        android:id="@+id/page1"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehaviour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
 </android.widget.RelativeLayout>
