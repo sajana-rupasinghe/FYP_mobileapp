@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+
         //final Button lgout = (Button) findViewById(R.id.logout);
         Toolbar toolbar = findViewById(R.id.toolBar);
         toolbar.setTitle("E-Moniter");

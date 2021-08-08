@@ -65,7 +65,7 @@ public class Chart_Fragment extends Fragment {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String val = String.valueOf(dataSnapshot.child("nodemcu-935e7-default-rtdb/Real_Time/-MWvrDdiFQfVxilfczaJ").getValue());
+               String val = String.valueOf(dataSnapshot.child("nodemcu-935e7-default-rtdb/Real_Time/-MWvrDdiFQfVxilfczaJ").getValue());
                 String res = val.toString().substring(1, val.length() - 1);
                 String[] data = res.split(",");
                 String act = data[0];
